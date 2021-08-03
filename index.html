@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./accests/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Nike</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="thumb">
+            <li class="thumb-item" onmouseover="changeImageSrc('./accests/imgs/shoes1.png')">
+                <img src="./accests/imgs/shoes1.png" class="thumb-img">
+            </li>
+            <li class="thumb-item" onmouseover="changeImageSrc('./accests/imgs/shoes2.png')">
+                <img src="./accests/imgs/shoes2.png" class="thumb-img">
+            </li>
+            <li class="thumb-item" onmouseover="changeImageSrc('./accests/imgs/shoes3.png')">
+                <img src="./accests/imgs/shoes3.png" class="thumb-img">
+            </li>
+        </ul>
+
+        <div class="img__box">
+            <h2 class="img__box-title">Nike Air Zoom</h2>
+            <img src="./accests/imgs/shoes1.png" class="img__box-img">
+            <ul class="size">
+                <span>Size</span>
+                <li class="size-item">7</li>
+                <li class="size-item">8</li>
+                <li class="size-item">9</li>
+                <li class="size-item">10</li>
+            </ul>
+            <a href="" class="btn-buy">
+                <i class="far fa-cart-plus btn-buy-icon"></i>  Add To Cart
+            </a>
+        </div>
+    </div>
+
+<!-- JS -->
+<script src="./jquery.min.js"></script>
+    <script>
+        function changeImageSrc(anything) {
+            document.querySelector('.img__box-img').src = anything;
+        }
+    </script>
+</body>
+</html>
